@@ -50,4 +50,4 @@ if __name__ == '__main__':
     local_ip = get_local_ip()
     port = 5050
     print(f"🌐 Le client doit se connecter à : {local_ip}:{port}")
-    app.run(host="0.0.0.0", port=port)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
