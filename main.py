@@ -1,3 +1,7 @@
+import pip
+
+pip.main(["install", "sanic"])
+
 from sanic import Sanic, response
 from sanic.request import Request
 import os
